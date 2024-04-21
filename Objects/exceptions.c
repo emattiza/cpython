@@ -370,6 +370,7 @@ static PyGetSetDef BaseException_getset[] = {
      BaseException_set_context, PyDoc_STR("exception context")},
     {"__cause__", BaseException_get_cause,
      BaseException_set_cause, PyDoc_STR("exception cause")},
+    {"__match_args__", (getter)BaseException_get_args},
     {NULL},
 };
 
